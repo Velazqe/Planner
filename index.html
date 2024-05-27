@@ -9,17 +9,16 @@
 <body>
     <div class="container">
         <h1>Task Board</h1>
-        <p>A simple Kanban board for task management</p>
+        <p>MAXIMIZE YOUR PRODUCTIVITY!</p>
         <button id="addTaskBtn">Add Task</button>
         <div class="board">
-            <div class="column" id="todo">
+            <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <h2>To Do</h2>
-                
             </div>
-            <div class="column" id="in-progress">
+            <div class="column" id="progress" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <h2>In Progress</h2>
             </div>
-            <div class="column" id="done">
+            <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <h2>Done</h2>
             </div>
         </div>
